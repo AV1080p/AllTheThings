@@ -26,18 +26,18 @@
     x86 C:\Windows\Microsoft.NET\Framework\v4.0.30319\regsvcs.exe AllTheThings.dll
 
     x64 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\regsvcs.exe AllTheThings.dll
-##3. 
+## 3. 
 
     x86 C:\Windows\Microsoft.NET\Framework\v4.0.30319\regasm.exe /U AllTheThings.dll
 
     x64 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\regasm.exe /U AllTheThings.dll
 
-##4. 
+## 4. 
 
     regsvr32 /s  /u AllTheThings.dll -->Calls DllUnregisterServer
 
     regsvr32 /s AllTheThings.dll --> Calls DllRegisterServer
     
-##5. 
+## 5. 
 
     rundll32 AllTheThings.dll,EntryPoint
